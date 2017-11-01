@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>贪吃蛇</title>
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+    <div class="container">
+        <ul class="oul" id="oul"></ul>
+        <div class="oper">
+            <p style="color:blue">历史最高分数：<span id="zuigao" style="color:#000">0</span></p>
+            <p style="color:blue">当前分数：<span id="fenshu" style="color:red">5</span></p>
+            <p><select id="level">
+                <option value="300">简单</option>
+                <option value="200" selected>中级</option>
+                <option value="100">较难</option>
+            </select></p>
+            <p><input type="button" value="开始" id="btnStart"/></p>
+            <p><input type="button" value="暂停" id="btnsuspend"/></p>
+        </div>
+    </div>
+    <audio src="mp3/bjyy.mp3"  loop id="bjyy"/>
+    <audio src="mp3/siwang.wav"  id="siwang"/>
+    <audio src="mp3/siwu.mp3"  id="siwu"/>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

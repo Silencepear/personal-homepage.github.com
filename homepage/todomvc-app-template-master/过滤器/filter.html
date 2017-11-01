@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+	<script src="../node_modules/angular/angular.js"></script>
+</head>
+<body ng-app="app" ng-controller="AppCtrl">
+
+<ul>
+	<li ng-repeat="item in datas | filter:{isSingle: true}">
+		<span>{{item.name}}</span>
+	</li>
+</ul>
+<script>
+	angular.module('app', [])
+			.controller('AppCtrl', function ($scope) {
+//				所谓的过滤器, 本意上是为了配合字符串操作的, 在angular里, 也可以用来筛查数组的元素
+
+				$scope.datas = [
+					{
+						name: '汪峰',
+						isSingle: false,
+						piku: true
+					},
+					{
+						name: '王丰',
+						isSingle: false,
+						piku: false
+					},
+					{
+						name: '卓胜辉',
+						isSingle: true,
+						piku: false
+					}
+				]
+			})
+</script>
+</body>
+</html>

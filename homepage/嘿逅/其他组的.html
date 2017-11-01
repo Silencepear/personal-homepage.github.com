@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+     <link href="./lib/css/bootstrap.css" rel="stylesheet">
+     <link href="./css/other.css" rel="stylesheet">
+</head>
+<body>
+	<section id="date">
+		  <!-- 这个月 -->
+    <div class="calendar this_month">
+        <!-- 月份 -->
+        <div class="calendar_month"><i class="prev_month"></i><span>2017.09</span><i class="next_month"></i>
+        </div>
+        <ul class="calendar_day">
+            <li class="box_day">日</li>
+            <li class="box_day">一</li>
+            <li class="box_day">二</li>
+            <li class="box_day">三</li>
+            <li class="box_day">四</li>
+            <li class="box_day">五</li>
+            <li class="box_day">六</li>
+        </ul>
+        <ul class="calendar_date1">
+            <li class="box_date  passed">28</li>
+            <li class="box_date  passed">29</li>
+            <li class="box_date  passed">30</li>
+            <li class="box_date  passed">31</li>
+            <li class="box_date  passed">1</li>
+            <li class="box_date  passed">2</li>
+            <li class="box_date  passed">3</li>
+        </ul>
+        <ul class="calendar_date1">
+            <li class="box_date  passed">4</li>
+            <li class="box_date  passed">5</li>
+            <li class="box_date  passed">6</li>
+            <li class="box_date  passed">7</li>
+            <li class="box_date  passed">8</li>
+            <li class="box_date  passed">9</li>
+            <li class="box_date  reserve today">今天
+                <br>已租</li>
+        </ul>
+        <ul class="calendar_date1">
+            <li class="box_date reserve">11
+                <br>已租</li>
+            <li class="box_date reserve">12
+                <br>已租</li>
+            <li class="box_date">13</li>
+            <li class="box_date">14</li>
+            <li class="box_date">15</li>
+            <li class="box_date">16</li>
+            <li class="box_date">17</li>
+        </ul>
+        <ul class="calendar_date1">
+            <li class="box_date">18</li>
+            <li class="box_date">19</li>
+            <li class="box_date">20</li>
+            <li class="box_date">21</li>
+            <li class="box_date">22</li>
+            <li class="box_date">23</li>
+            <li class="box_date">24</li>
+        </ul>
+        <ul class="calendar_date1">
+            <li class="box_date">25</li>
+            <li class="box_date">26</li>
+            <li class="box_date">27</li>
+            <li class="box_date">28</li>
+            <li class="box_date">29</li>
+            <li class="box_date">30</li>
+            <li class="box_date">1</li>
+        </ul>
+    </div>
+    <!-- 下个月 -->
+    <div class="calendar next_month">
+        <!-- 下个月 -->
+        <div class="calendar_month"><i class="prev_month"></i><span>2017.10</span><i class="next_month"></i></div>
+        <ul class="calendar_day">
+            <li class="box_day">日</li>
+            <li class="box_day">一</li>
+            <li class="box_day">二</li>
+            <li class="box_day">三</li>
+            <li class="box_day">四</li>
+            <li class="box_day">五</li>
+            <li class="box_day">六</li>
+        </ul>
+        <ul class="calendar_date1">
+            <li class="box_date passed">25</li>
+            <li class="box_date passed">26</li>
+            <li class="box_date passed">27</li>
+            <li class="box_date passed">28</li>
+            <li class="box_date passed">29</li>
+            <li class="box_date passed">30</li>
+            <li class="box_date ">1</li>
+        </ul>
+        <ul class="calendar_date1">
+            <li class="box_date">2</li>
+            <li class="box_date">3</li>
+            <li class="box_date">4</li>
+            <li class="box_date">5</li>
+            <li class="box_date">6</li>
+            <li class="box_date">7</li>
+            <li class="box_date">8</li>
+        </ul>
+        <ul class="calendar_date1">
+            <li class="box_date">9</li>
+            <li class="box_date">10</li>
+            <li class="box_date">11</li>
+            <li class="box_date">12</li>
+            <li class="box_date">13</li>
+            <li class="box_date">14</li>
+            <li class="box_date">15</li>
+        </ul>
+        <ul class="calendar_date1">
+            <li class="box_date">16</li>
+            <li class="box_date">17</li>
+            <li class="box_date">18</li>
+            <li class="box_date">19</li>
+            <li class="box_date">20</li>
+            <li class="box_date">21</li>
+            <li class="box_date">22</li>
+        </ul>
+        <ul class="calendar_date1">
+            <li class="box_date">23</li>
+            <li class="box_date">24</li>
+            <li class="box_date">25</li>
+            <li class="box_date">26</li>
+            <li class="box_date">27</li>
+            <li class="box_date">28</li>
+            <li class="box_date">29</li>
+        </ul>
+    </div>
+	</section>
+	<div class="line"></div>
+	<section id="miner1">
+		<div class="evaluate container">
+			<h3>玩家评价</h3>
+			<div class="evaluate-content">
+				<ul class="col-xs-12">
+					<li class="col-xs-12 active">
+						<a href="#"></a>
+						<h4>嫖老师PDD</h4>
+						<span>☆☆☆☆☆&nbsp;&nbsp;2017-05-10</span>
+						<p>娇妹娇妹,我是骚猪小轩啊。</p>
+					</li>
+					<li class="col-xs-12">
+						<a href="#"></a>
+						<h4>五五开white</h4>
+						<span>☆☆☆☆☆&nbsp;&nbsp;2017-05-10</span>
+						<p>这种操作对我五五开来说不是很正常吗？五五开牛逼刷起来！</p>
+					</li>
+				</ul>
+			</div>
+			<div class="all-evaluate">
+				<p><a href="#">全部评论&nbsp;(14)</a></p>
+			</div>
+		</div>
+		<div class="line"></div>
+		<div class="rules container">
+			<h3>交易规则</h3>
+			<div class="rules-content">
+				<ul class="col-xs-12">
+					<li class="col-xs-12">
+						<h5>客户须知</h5>
+						<p>请订单与房东充分沟通,已确认不可退。</p>
+						<p>爱护场所设施设备,如损坏物件,按照市价赔偿。</p>
+						<p>如需开具发票(专票),需收取8个点,(开票范围详询商家)。</p>
+					</li>
+				</ul>
+				<ul>
+					<li class="col-xs-12">
+						<h5>在线定金比</h5>
+						<p>订单确认后,在线支付房款</p>
+					</li>
+					<li class="col-xs-12">
+						<h5>押金</h5>
+						<p>在线收取押金1000,离店前请联系房东确认,经确认后,可退还押金。</p>
+					</li>
+				</ul>
+				<a href="#" class="col-xs-12"><i></i>展开</a>
+		</div>
+		
+	</section>
+    <div class="line"></div>
+	<section id="recommend">
+			<div class="recommend-content container">
+			<h3>为您推荐</h3>
+			<ul>
+				<li class="col-xs-12" style="margin-top: 20px">
+					<div class="recommend-img"></div>
+					<h4>杭州西溪湿地迪卡别墅</h4>
+					<span>☆ ☆ ☆ ☆ ☆ <img src="./img/banner-details-page_54.png" alt=""></span>
+					<p class="introduced">400平方米 最多30人 可注射 可做饭</>
+					<h5><a href="#"></a>西湖区.西湖风景区及灵隐寺度假区</h5>
+					<p class="price">¥1580/天</p>
+				</li>
+				<li class="col-xs-12">
+					<div class="recommend-img"></div>
+					<h4>蓝木轰趴麋鹿森林馆</h4>
+					<span>☆ ☆ ☆ ☆ ☆ <img src="./img/banner-details-page_54.png" alt=""></span>
+					<p class="introduced">400平方米 最多30人 可注射 可做饭</>
+					<h5><a href="#"></a>下沙经济开发区</h5>
+					<p class="price">¥1580/天</p>
+				</li>
+				<li class="col-xs-12">
+					<div class="recommend-img"></div>
+					<h4>西溪湿地.遇见你别墅轰趴</h4>
+					<span>☆ ☆ ☆ ☆ ☆ <img src="./img/banner-details-page_54.png" alt=""></span>
+					<p class="introduced">400平方米 最多30人 可注射 可做饭</>
+					<h5><a href="#"></a>余杭区.西溪湿地</h5>
+					<p class="price">¥2546/天</p>
+				</li>
+				<li class="col-xs-12">
+					<div class="recommend-img"></div>
+					<h4>江滨沿岸.轰趴别墅</h4>
+					<span>☆ ☆ ☆ ☆ ☆ <img src="./img/banner-details-page_54.png" alt=""></span>
+					<p class="introduced">400平方米 最多30人 可注射 可做饭</>
+					<h5><a href="#"></a>江干区.下沙开发区</h5>
+					<p class="price">¥3245/天</p>
+				</li>
+			</ul>
+			</div>
+	</section>
+
+
+	<script src="./lib/jQuery/jquery-3.2.1.min.js"></script>
+	<script src="./lib/js/bootstrap.min.js"></script>
+	<script> 
+    	// 下个月隐藏
+        $("div.next_month").hide();
+        $("i.next_month").click(function() {
+        	// 点击下个月显示
+            $("div.this_month").hide();
+            $("div.next_month").show();
+            $("div.next_month").css("display", "fiex");
+        });
+        $("i.prev_month").click(function() {
+        	//点击显示这个月
+            $("div.next_month").hide();
+            $("div.this_month").show();
+        });
+        $("li[class='box_date']").click(function(){
+          $(this).toggleClass("yuding");
+        });
+      </script>
+</body>
+</html>
